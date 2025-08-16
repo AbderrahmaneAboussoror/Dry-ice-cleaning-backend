@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn --transpile-only server.ts",
-    "seed:packs": "npx ts-node scripts/seedPacks.ts",
-    "postinstall": "npm run build"
+    "start": "ts-node server.ts",
+    "build": "tsc --noEmit",
+    "dev": "ts-node-dev --respawn --transpile-only server.ts"
   },
   "engines": {
     "node": "18.x"
